@@ -10,12 +10,30 @@ sorting takes a time complexity of O(nlogn) and a space complexity of o(1)
 A hashset allows us to instert elements in to the hashset in 0(1)
 """
 
+from typing import List
 
 
-set = {}
-nums = [1,2,3,1]
+
+# print(dir(hash_set))
 
 
-print(dir(set))
-for i in nums:
-    pass
+##ALgorithms followed
+
+
+
+class Solution:
+    def contains_duplicate(self, nums:List[int]) -> bool:
+        hash_set = set()
+        for i in nums:
+            if i in hash_set:
+                return True
+            hash_set.add(i)
+        return False
+
+
+
+sol = Solution()
+
+print(sol.contains_duplicate([1,2,3]))
+
+
