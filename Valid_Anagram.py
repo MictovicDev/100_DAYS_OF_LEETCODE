@@ -13,6 +13,9 @@ loop through both strings
 append the character as the key and the number the character appears as the value
 after that compare the both hashmaps if they are the saame  theb it is an anagram
 
+
+sorting is assumed not to take a space complexity of 0(1)
+
 """
 
 
